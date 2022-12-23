@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/https://ahmadelrouby.github.io/youtube-analysis/sitemap.xml
+Sitemap: http://localhost:4000/youtube-analysis/sitemap.xml
