@@ -73,7 +73,7 @@
               <a href="#">NaN</a>
               on December 23, 2022 &middot; <span class="reading-time" title="Estimated read time">
   
-   16 mins  read </span>
+   17 mins  read </span>
 
             </span>
           </div>
@@ -130,13 +130,18 @@
 
 <p>
   We want to focus on the trends over the years of existing YouTube in a format
-  of evolution. To understand where we were and are now
-  (https://www.versionmuseum.com/history-of/youtube-website). From the nostalgic
-  cute kittens short videos to professional content creators with a global
-  audience and incredible production quality making a real impact on topics like
-  political rivalries, product reviews and scientific education. What content
-  became a part of our school of life, and how do people operate the platform in
-  recent years?
+  of evolution. To understand where we
+  <a
+    style="text-decoration: underline"
+    href="https://www.versionmuseum.com/history-of/youtube-website"
+  >
+    were</a
+  >
+  and are now . From the nostalgic cute kittens short videos to professional
+  content creators with a global audience and incredible production quality
+  making a real impact on topics like political rivalries, product reviews and
+  scientific education. What content became a part of our school of life, and
+  how do people operate the platform in recent years?
 </p>
 
 <h2 class="section-heading">Our Analysis</h2>
@@ -153,7 +158,7 @@
   responsible for 99% of views on the platform for other years.
 </p>
 
-<b>-figure goes here-</b>
+<img class="img-fluid" src="./img/99.png" alt="99% Views" />
 
 <p>
   As we can see even in the first years of existing the platform the whole
@@ -174,6 +179,45 @@
   straightforward business. As a study <b>-add link here-</b> from the Pew
   Research Center demonstrates, YouTube has been quietly shifting its
   recommendation system to reward lengthy videos.
+</p>
+
+<h3 class="analysis-question">
+  The additional question arises: What is the behavior of the duration of videos
+  over the years, so that it changes the number of views?
+</h3>
+
+<img
+  class="img-fluid"
+  src="./img/category_duration_years.png"
+  alt="Category durations over the years"
+/>
+
+<p>
+  Wow! Everything tends to be longer! The simplest explanation for these
+  swelling run times is a straightforward business. As a study from the Pew
+  Research Center demonstrates, YouTube has been quietly shifting its
+  recommendation system to reward lengthy videos.
+</p>
+
+<p>
+  Let's now categorize videos based on the duration: less than 2 minutes,
+  between 2 and 20 minutes, and more than 20 minutes (corresponding to the
+  actual filters in YouTube). The following plot shows the contribution of
+  videos with different duration to the total amount of views on YouTube.
+</p>
+
+<img
+  class="img-fluid"
+  src="./img/duration_years.png"
+  alt="Video duration changes over the years"
+/>
+
+<p>
+  The videos that have a duration of less than 20 min prevail over the other
+  videos, but there is a tendency for the longer videos to dominate the really
+  small ones starting from 2013. We assume that this increasing gap between
+  short and long videos after 2013 might be the reason why TikTok became so
+  successful nowadays.
 </p>
 
 <h3 class="analysis-question">
@@ -202,13 +246,53 @@
   <li>The titles of the video usually meant to be neutral.</li>
 </ol>
 
+<img
+  class="img-fluid"
+  src="./img/sentiment_years.png"
+  alt="Sentiment changes over the years"
+/>
+
 <p>
-  We at this point are not sure if the hate is paid. For that we need to do the
-  exact matching for each year with the equal author setting like duration and
-  category. The are some
+  <b>THIS NEEDS TO CHANGE-</b>We at this point are not sure if the hate is paid.
+  For that we need to do the exact matching for each year with the equal author
+  setting like duration and category. The are some
 </p>
 
-<b>-figure goes here-</b>
+<div class="row">
+  <div class="column">
+    <img
+      style="width: 100%"
+      src="./img/pos_neg_words_2011.png"
+      alt="Top Positive vs Negative words 2011"
+    />
+  </div>
+  <div class="column">
+    <img
+      style="width: 100%"
+      src="./img/pos_neg_words_2013.png"
+      alt="Top Positive vs Negative words 2013"
+    />
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img
+      style="width: 100%"
+      src="./img/pos_neg_words_2016.png"
+      alt="Top Positive vs Negative words 2016"
+    />
+  </div>
+  <div class="column">
+    <img
+      style="width: 100%"
+      src="./img/pos_neg_words_2019.png"
+      alt="Top Positive vs Negative words 2019"
+    />
+  </div>
+</div>
+
+<br />
 
 <h3 class="analysis-question">
   Does the category precisely describe the video? How are the videos and
@@ -238,7 +322,11 @@
 
 <p>Let's look at the most popular tags for some years.</p>
 
-<b>-figure goes here-</b>
+<img
+  class="img-fluid"
+  src="./img/word_cloud_tags.png"
+  alt="Sentiment changes over the years"
+/>
 
 <p>
   We are taking into account the most viewed videos that show us the main topics
@@ -251,7 +339,29 @@
   see the supply and demand.
 </p>
 
-<b>-figure with google trend goes here-</b>
+<script
+  type="text/javascript"
+  src="https://ssl.gstatic.com/trends_nrtr/3197_RC01/embed_loader.js"
+></script>
+<script type="text/javascript">
+  trends.embed.renderExploreWidget(
+    "TIMESERIES",
+    {
+      comparisonItem: [
+        { keyword: "funny", geo: "", time: "2008-01-01 2022-12-23" },
+        { keyword: "music", geo: "", time: "2008-01-01 2022-12-23" },
+        { keyword: "news", geo: "", time: "2008-01-01 2022-12-23" },
+        { keyword: "comedy", geo: "", time: "2008-01-01 2022-12-23" },
+      ],
+      category: 0,
+      property: "youtube",
+    },
+    {
+      exploreQuery: "date=all_2008&gprop=youtube&q=funny,music,news,comedy",
+      guestPath: "https://trends.google.com:443/trends/embed/",
+    }
+  );
+</script>
 
 <p>
   For the "Funny" tag we can see that it was a big part of Youtube since 2006
@@ -284,7 +394,33 @@
   across all videos, we could build a graph of video relationships.
 </p>
 
-<b>-figure with graph goes here-</b>
+<p>
+  <b><center>2009 Graph</center></b>
+</p>
+<img
+  class="img-fluid"
+  src="./img/categories_graph_2009.png"
+  alt="Sentiment changes over the years"
+/>
+
+<hr />
+<p>
+  <b><center>2012 Graph</center></b>
+</p>
+<img
+  class="img-fluid"
+  src="./img/categories_graph_2012.png"
+  alt="Sentiment changes over the years"
+/>
+<hr />
+<p>
+  <b><center>2015 Graph</center></b>
+</p>
+<img
+  class="img-fluid"
+  src="./img/categories_graph_2015.png"
+  alt="Sentiment changes over the years"
+/>
 
 <p>How to read this graph:</p>
 <ol>
@@ -389,7 +525,6 @@
 <hr />
 <br />
 
-
 <h5>Circle Graph</h5>
 
 <p>
@@ -397,7 +532,35 @@
   explicit is the information of the tag: how the categories are connected among
   each other in terms of tags?
 </p>
-<b>-figure with circle graph goes here-</b>
+
+<p>
+  <b><center>2009 Categories Graph</center></b>
+</p>
+<img
+  class="img-fluid"
+  src="./img/categories_map_2009.png"
+  alt="Sentiment changes over the years"
+/>
+
+<hr />
+<p>
+  <b><center>2012 Categories Graph</center></b>
+</p>
+<img
+  class="img-fluid"
+  src="./img/categories_map_2012.png"
+  alt="Sentiment changes over the years"
+/>
+<hr />
+<p>
+  <b><center>2015 Categories Graph</center></b>
+</p>
+<img
+  class="img-fluid"
+  src="./img/categories_map_2015.png"
+  alt="Sentiment changes over the years"
+/>
+
 <p>
   Using the previous graph with the strongly connected videos, we displayed the
   following plots of interaction between the categories. Where the node is the
@@ -427,70 +590,26 @@
   </li>
 </ul>
 
-<!-- <h2 class="section-heading">The Final Frontier</h2>
+<h3 class="analysis-question">
+  How do creators write the description of their videos as opposed to the tags?
+</h3>
 
-<p>
-  There can be no thought of finishing for ‘aiming for the stars.’ Both
-  figuratively and literally, it is a task to occupy the generations. And no
-  matter how much progress one makes, there is always the thrill of just
-  beginning.
-</p>
-
-<p>
-  There can be no thought of finishing for ‘aiming for the stars.’ Both
-  figuratively and literally, it is a task to occupy the generations. And no
-  matter how much progress one makes, there is always the thrill of just
-  beginning.
-</p>
-
-<blockquote class="blockquote">
-  The dreams of yesterday are the hopes of today and the reality of tomorrow.
-  Science has not yet mastered prophecy. We predict too much for the next year
-  and yet far too little for the next ten.
-</blockquote>
-
-<p>
-  Spaceflights cannot be stopped. This is not the work of any one man or even a
-  group of men. It is a historical process which mankind is carrying out in
-  accordance with the natural laws of human development.
-</p>
-
-<h2 class="section-heading">Reaching for the Stars</h2>
-
-<p>
-  As we got further and further away, it [the Earth] diminished in size. Finally
-  it shrank to the size of a marble, the most beautiful you can imagine. That
-  beautiful, warm, living object looked so fragile, so delicate, that if you
-  touched it with a finger it would crumble and fall apart. Seeing this has to
-  change a man.
-</p>
+<p><b>Add text explaining the question</b></p>
 
 <img
   class="img-fluid"
-  src="https://source.unsplash.com/Mn9Fa_wQH-M/800x450"
-  alt="Demo Image"
+  src="./img/word_cloud_desc.png"
+  alt="Sentiment changes over the years"
 />
-<span class="caption text-muted"
-  >To go places and do things that have never been done before – that’s what
-  living is all about.</span
->
 
 <p>
-  Space, the final frontier. These are the voyages of the Starship Enterprise.
-  Its five-year mission: to explore strange new worlds, to seek out new life and
-  new civilizations, to boldly go where no man has gone before.
+  <b
+    >Add text here comparing this word cloud with the previous word cloud of
+    tags, and how it actually descibes trending social media platforms. We also
+    should mention that we're cutting off anything that gets too popular to try
+    and spot the new trends and actual topics of each year</b
+  >
 </p>
-
-<p>
-  As I stand out here in the wonders of the unknown at Hadley, I sort of realize
-  there’s a fundamental truth to our nature, Man must explore, and this is
-  exploration at its greatest.
-</p>
-
-<p>
-  Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>.
-  Photographs by <a href="https://unsplash.com/">Unsplash</a>.
-</p> -->
 
 
         <hr>
